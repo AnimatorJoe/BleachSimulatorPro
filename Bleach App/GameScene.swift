@@ -17,9 +17,9 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         
         //Create bleach bottle object
-        //let bleachPhoto = SKTexture(imageNamed: "Bleach.jpg")
-        bleachBottle = SKSpriteNode(imageNamed: "Bleach.jpg")
-        bleachBottle.size = self.size
+        bleachBottle = SKSpriteNode(imageNamed: "Bleach.png")
+        bleachBottle.size.height = self.size.height*0.8
+        bleachBottle.size.width = self.size.width*0.8
         bleachBottle.position = CGPoint(x:0, y:0)
         self.addChild(bleachBottle)
         
