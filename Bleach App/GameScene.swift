@@ -11,17 +11,17 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
+    private var bleachBottle = SKSpriteNode();
     
     override func didMove(to view: SKView) {
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
+        //Create bleach bottle object
+        //let bleachPhoto = SKTexture(imageNamed: "Bleach.jpg")
+        bleachBottle = SKSpriteNode(imageNamed: "Bleach.jpg")
+        bleachBottle.size = self.size
+        bleachBottle.position = CGPoint(x:0, y:0)
+        self.addChild(bleachBottle)
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.05
@@ -43,6 +43,7 @@ class GameScene: SKScene {
             n.position = pos
             n.strokeColor = SKColor.green
             self.addChild(n)
+            print(pos)
         }
     }
     
@@ -63,10 +64,6 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
-        
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }
     

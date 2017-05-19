@@ -17,6 +17,7 @@
 		73930AD41E648C2D00833E08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73930AD21E648C2D00833E08 /* LaunchScreen.storyboard */; };
 		73930ADF1E648C2D00833E08 /* Bleach_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73930ADE1E648C2D00833E08 /* Bleach_AppTests.swift */; };
 		73930AEA1E648C2D00833E08 /* Bleach_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73930AE91E648C2D00833E08 /* Bleach_AppUITests.swift */; };
+		73E69CA11ECF53BC00D7908B /* Bleach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73E69CA01ECF53BC00D7908B /* Bleach.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		73930AE51E648C2D00833E08 /* Bleach AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bleach AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73930AE91E648C2D00833E08 /* Bleach_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bleach_AppUITests.swift; sourceTree = "<group>"; };
 		73930AEB1E648C2D00833E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73E69CA01ECF53BC00D7908B /* Bleach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bleach.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		73930AC21E648C2D00833E08 /* Bleach App */ = {
 			isa = PBXGroup;
 			children = (
+				73E69CA21ECF53C000D7908B /* Photos */,
 				73930AC31E648C2D00833E08 /* AppDelegate.swift */,
 				73930AC51E648C2D00833E08 /* GameScene.sks */,
 				73930AC71E648C2D00833E08 /* Actions.sks */,
@@ -132,6 +135,14 @@
 				73930AEB1E648C2D00833E08 /* Info.plist */,
 			);
 			path = "Bleach AppUITests";
+			sourceTree = "<group>";
+		};
+		73E69CA21ECF53C000D7908B /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				73E69CA01ECF53BC00D7908B /* Bleach.jpg */,
+			);
+			name = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +257,7 @@
 			files = (
 				73930ACF1E648C2D00833E08 /* Main.storyboard in Resources */,
 				73930AC61E648C2D00833E08 /* GameScene.sks in Resources */,
+				73E69CA11ECF53BC00D7908B /* Bleach.jpg in Resources */,
 				73930AD11E648C2D00833E08 /* Assets.xcassets in Resources */,
 				73930AD41E648C2D00833E08 /* LaunchScreen.storyboard in Resources */,
 				73930AC81E648C2D00833E08 /* Actions.sks in Resources */,
@@ -526,6 +538,7 @@
 				73930AF01E648C2D00833E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73930AF11E648C2D00833E08 /* Build configuration list for PBXNativeTarget "Bleach AppTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +547,7 @@
 				73930AF31E648C2D00833E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73930AF41E648C2D00833E08 /* Build configuration list for PBXNativeTarget "Bleach AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +556,7 @@
 				73930AF61E648C2D00833E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
